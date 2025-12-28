@@ -1,5 +1,5 @@
 :root {
-  --content-color: rgb(39, 39, 39);
+  --content-color: rgb(171, 171, 171);
   --color-button: rgb(96, 96, 96);
   --mobile-size: 1080px;
   --hover-button: rgb(195, 195, 195);
@@ -47,7 +47,7 @@ header {
 }
 
 .light {
-  color: white;
+  color:black;
 }
 
 .logo-box {
