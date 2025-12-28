@@ -47,7 +47,7 @@ header {
 }
 
 .light {
-  color:black;
+  color: black;
 }
 
 .logo-box {
@@ -127,13 +127,12 @@ main {
   }
 
   .mobile {
-    display: block
+    display: block;
   }
   .nomobile {
     display: none;
   }
 }
-
 
 .size-2 {
   width: 50%;
