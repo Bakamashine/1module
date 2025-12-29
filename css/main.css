@@ -348,7 +348,7 @@ main {
 footer {
   background-color: var(--content-color);
   margin-top: 20px;
-  padding: 50px;
+  padding: 5%;
   display: flex;
   justify-content: space-around;
 }
