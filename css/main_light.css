@@ -119,6 +119,9 @@ main {
   .header-menu {
     display: none;
   }
+  .slider-button {
+    bottom: 5% !important;
+  }
 
   .burger {
     display: block;
@@ -258,10 +261,6 @@ main {
   border: 1px solid black !important;
 }
 
-.main-search {
-  /* display: grid; */
-}
-
 .main-search__wrapper {
   /* display: flex;
   justify-content: center; */
@@ -322,9 +321,6 @@ main {
   width: 100%;
 }
 
-.card-content {
-  /* color: white */
-}
 .card-content p {
   border-bottom: 1px solid black;
 }
@@ -376,9 +372,6 @@ footer {
   flex-wrap: wrap;
 }
 
-.account .history-bought {
-  /* width: 50%; */
-}
 .account .history-bought .history-bought-box {
   width: 100%;
   padding: 30px;
