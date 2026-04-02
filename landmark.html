@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Открой Оренбуржье</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <header class="header header-light" id="header">
+      <a href="index.html">
+        <div class="header__logo">
+          <img src="/img/logo.jpg" alt="" class="" id="logo" />
+        </div>
+      </a>
+      <h1>Открой Оренбуржье</h1>
+      <input type="checkbox" id="nav-toggle" hidden />
+      <label for="nav-toggle" class="burger btn-light">Burger</label>
+      <nav id="main-nav" class="header__nav">
+        <a href="#search-section" class="btn btn-light" id="go-to-search"
+          >Поиск достопромечательностей</a
+        >
+        <a href="login.html" class="btn btn-light" id="nav-login">Войти</a>
+        <a href="register.html" href="" class="btn btn-light" id="nav-register"
+          >Регистрация</a
+        >
+        <a href="profile.html" class="btn btn-light" id="nav-profile"
+          >Личный кабинет</a
+        >
+        <a href="catalog.html" class="btn btn-light" id="nav-catalog"
+          >Каталог достопромечательностей</a
+        >
+        <a class="btn btn-light mt-2 mobile close-menu">Закрыть</a>
+      </nav>
+    </header>
+
+    <main class="main main-light" id="landmark-page">
+      <section class="default-content">
+        <h3 class="text-center" id="landmark-name">Без названия</h3>
+        <p id="landmark-desc">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem
+          temporibus ex sed, omnis in iusto cupiditate unde consequatur sint.
+          Facilis quae deleniti at minus impedit iusto, voluptatem optio cumque
+          soluta?
+        </p>
+        <section id="landmark-slider" class="slider">
+          <input type="radio" name="slider" id="slide1" checked />
+          <input type="radio" name="slider" id="slide2" />
+          <input type="radio" name="slider" id="slide3" />
+          <div class="slides">
+            <div class="slide">
+              <img src="/img/logo.jpg" />
+            </div>
+            <div class="slide">
+              <img src="/img/logo.jpg" />
+            </div>
+            <div class="slide">
+              <img src="/img/logo.jpg" />
+            </div>
+          </div>
+          <div class="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
+        </section>
+        <p id="landmark-coords">Координаты: ххх ххх</p>
+        <p id="landmark-region">Регион: ххх</p>
+        <p id="landmark-cat">Категория: ххх</p>
+        <div class="short-info p-2" id="landmark-info">
+          <p>Режим работы: ххх</p>
+          <p>Стоимость: 1000 руб</p>
+        </div>
+      </section>
+
+      <!-- Комментарии -->
+      <section class="comments default-content mt-2">
+        <div class="landmark-comments" id="landmark-comments">
+          <h2 class="text-center">Комментарии</h2>
+          <div class="comment">
+            <h5 class="comment__name">Имя пользователя: Иван | 11.07.2005</h5>
+            <p class="mt-2">Привет мир!</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Предложение по исправлению -->
+      <!-- <section class="default-content"> -->
+      <form class="form form-light form-full mt-2">
+        <h2 class="text-center">Предложение по исправлению</h2>
+        <div class="mb-3">
+          <label class="label label-light" for="correction-name"
+            >Имя пользователя</label
+          >
+          <input
+            id="correction-name"
+            class="input input-light"
+            required
+            placeholder="Ваше имя..."
+          />
+        </div>
+        <div class="mb-3">
+          <label class="label label-light" for="correction-email">Email</label>
+          <input
+            id="correction-email"
+            class="input input-light"
+            required
+            placeholder="Ваша почта..."
+          />
+        </div>
+        <div class="mb-3">
+          <label class="label label-light" for="correction-type"
+            >Тип исправления</label
+          >
+          <select id="correction-type" class="input input-light">
+            <option>Выберите что-нибудь</option>
+            <option>Неточность в описании</option>
+            <option>Устаревшие данные</option>
+            <option>Некорректные данные</option>
+            <option>Некачественное фото</option>
+            <option>Другое</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="label label-light" for="correction-text"
+            >Имя пользователя</label
+          >
+          <textarea id="correction-text" class="input input-light"></textarea>
+        </div>
+        <div class="mb-3">
+          <label class="label label-light" for="correction-file"
+            >Загрузка фото</label
+          >
+          <input
+            id="correction-file"
+            class="input input-light"
+            type="text"
+            required
+            placeholder="Ваше имя..."
+          />
+        </div>
+        <div class="mb-3">
+          <input
+            id="correction-consent"
+            class=""
+            type="checkbox"
+            required
+            placeholder="Ваше имя..."
+          />
+          <label class="" for="correction-consent"
+            >Согласие на обработку данных</label
+          >
+        </div>
+        <div class="mb-3">
+          <button class="btn btn-light" id="correction-submit">
+            Отправить
+          </button>
+        </div>
+      </form>
+      <!-- </section> -->
+    </main>
+    <footer class="footer footer-light" id="footer">
+      <div class="footer__info">
+        <p>Телефон: 8-800-765-43-21</p>
+        <p>Email: info@orenlandmarks.ru</p>
+      </div>
+      <nav class="footer__nav">
+        <a class="btn btn-light" href="index.html">Главная</a>
+        <a class="btn btn-light" href="login.html">Вход</a>
+        <a class="btn btn-light" href="register.html">Регистрация</a>
+        <a class="btn btn-light" href="profile.html">Личный кабинет</a>
+        <a class="btn btn-light" href="catalog.html">Каталог</a>
+        <a class="btn btn-light" href="landmark.html">Достопримечательности</a>
+        <a class="btn btn-light" href="admin.html">Админ</a>
+        <a class="btn btn-light" href="index_dark.html">Главная (тёмная)</a>
+      </nav>
+      <a class="btn btn-light mobile" href="#header">^</a>
+    </footer>
+  </body>
+</html>

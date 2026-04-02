@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Открой Оренбуржье</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header class="header header-light" id="header">
+        <a href="index.html">
+            <div class="header__logo">
+                <img src="/img/logo.jpg" alt="" class="" id="logo">
+            </div>
+        </a>
+        <h1>Открой Оренбуржье</h1>
+        <input type="checkbox" id="nav-toggle" hidden>
+        <label for="nav-toggle" class="burger btn-light">Burger</label>
+        <nav id="main-nav" class="header__nav">
+            <a href="#search-section" class="btn btn-light" id="go-to-search">Поиск достопромечательностей</a>
+            <a href="login.html" class="btn btn-light" id="nav-login">Войти</a>
+            <a href="register.html" href="" class="btn btn-light" id="nav-register">Регистрация</a>
+            <a href="profile.html" class="btn btn-light" id="nav-profile">Личный кабинет</a>
+            <a href="landmark.html" class="btn btn-light" id="nav-catalog">Каталог достопромечательностей</a>
+            <a class="btn btn-light mt-2 mobile close-menu">Закрыть</a>
+        </nav>
+    </header>
+
+    <main class="main main-light">
+        <form class="form form-full" id="register-form">
+            <h1 class="header1">Регистрация</h1>
+            <div class="mb-3">
+                <label for="reg-email" class="label label-light">Email<span class="red">*</span></label>
+                <input type="email" id="reg-email" class="input input-light" required placeholder="Ваша почта...">
+            </div>
+            <div class="mb-3">
+                <label for="reg-lastname" class="label label-light">Фамилия<span class="red">*</span></label>
+                <input type="text" id="reg-lastname" class="input input-light" required placeholder="Ваше имя...">
+            </div>
+            <div class="mb-3">
+                <label for="reg-firstname" class="label label-light">Имя<span class="red">*</span></label>
+                <input type="email" id="reg-firstname" class="input input-light" required placeholder="Ваше имя...">
+            </div>
+            <div class="mb-3">
+                <label for="reg-password" class="label label-light">Пароль<span class="red">*</span></label>
+                <input type="password" id="reg-password" class="input input-light" required>
+            </div>
+            <div class="mb-3">
+                <label for="reg-consent" class="label label-light">Повторить пароль<span class="red">*</span></label>
+                <input type="password" id="reg-consent" class="input input-light" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="reg-birthdate" class="label label-light">Дата рождения</label>
+                <input type="text" id="reg-birthdate" class="input input-light">
+            </div>
+            <div class="mb-3">
+                <label for="reg-phone" class="label label-light">Номер телефона</label>
+                <input type="text" id="reg-phone" class="input input-light" placeholder="Ваш номер телефона...">
+            </div>
+
+            <div class="mb-3">
+                <button class="btn btn-light" id="login-submit">Войти</button>
+            </div>
+
+
+            <div class="mb-3">
+                <button class="btn btn-light">Забыли пароль?</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer footer-light" id="footer">
+        <div class="footer__info">
+            <p>Телефон: 8-800-765-43-21</p>
+            <p>Email: info@orenlandmarks.ru</p>
+        </div>
+        <nav class="footer__nav">
+            <a class="btn btn-light" href="index.html">Главная</a>
+            <a class="btn btn-light" href="login.html">Вход</a>
+            <a class="btn btn-light" href="register.html">Регистрация</a>
+            <a class="btn btn-light" href="profile.html">Личный кабинет</a>
+            <a class="btn btn-light" href="catalog.html">Каталог</a>
+            <a class="btn btn-light" href="landmark.html">Достопримечательности</a>
+            <a class="btn btn-light" href="admin.html">Админ</a>
+            <a class="btn btn-light" href="index_dark.html">Главная (тёмная)</a>
+        </nav>
+        <a class="btn btn-light mobile" href="#header">^</a>
+    </footer>
+</body>
+
+</html>
